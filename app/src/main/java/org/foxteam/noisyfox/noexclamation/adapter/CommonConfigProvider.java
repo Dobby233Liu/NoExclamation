@@ -6,8 +6,10 @@ import android.preference.PreferenceCategory;
 
 import org.foxteam.noisyfox.noexclamation.adapter.settings.ISettingsItem;
 
+import org.foxteam.noisyfox.noexclamation.R;
 import java.util.ArrayList;
 import java.util.List;
+import org.foxteam.noisyfox.noexclamation.*;
 
 /**
  * Created by Noisyfox on 2017/7/1.
@@ -79,7 +81,7 @@ public class CommonConfigProvider implements IConfigProvider, ISettingsItem.OnSe
 
     @Override
     public void setToNoisyfox() {
-        mTaskExecutor.runTask("设置为 noisyfox.io", new ITaskExecutor.TaskRunnable() {
+	mTaskExecutor.runTask("设置为 nosiyfox.io", new ITaskExecutor.TaskRunnable() {
             @Override
             public Bundle run() {
                 for (ISettingsItem s : mAllSettings) {

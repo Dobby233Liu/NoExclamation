@@ -43,7 +43,7 @@ public class NewActivity extends PreferenceActivity implements ITaskExecutor {
         findPreference("set_noisyfox").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
-                askForConfirm("即将把服务器地址设置为 noisyfox.io，是否继续？", new Runnable() {
+                askForConfirm(getString(R.string.set_to_nosiy), new Runnable() {
                     @Override
                     public void run() {
                         provider.setToNoisyfox();
@@ -55,7 +55,7 @@ public class NewActivity extends PreferenceActivity implements ITaskExecutor {
         findPreference("set_google").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
-                askForConfirm("即将把服务器地址重置为默认值，是否继续？", new Runnable() {
+                askForConfirm(getString(R.string.set_back), new Runnable() {
                     @Override
                     public void run() {
                         provider.resetToGoogle();
@@ -65,7 +65,7 @@ public class NewActivity extends PreferenceActivity implements ITaskExecutor {
             }
         });
 
-        runTask("获取root权限", new TaskRunnable() {
+        runTask(getString(R.string.gotting_root), new TaskRunnable() {
             @Override
             public Bundle run() {
                 String result = Utils.cmdExecSu("id");
@@ -78,7 +78,7 @@ public class NewActivity extends PreferenceActivity implements ITaskExecutor {
             @Override
             public void run(Bundle result) {
                 if (result != null) {
-                    Toast.makeText(NewActivity.this, "无法获得root权限！程序将可能无法正常使用！", Toast.LENGTH_LONG).show();
+                    Toast.makeText(NewActivity.this, R.string.no_root, Toast.LENGTH_LONG).show();
                 }
                 provider.refreshStatus();
             }
@@ -136,13 +136,13 @@ public class NewActivity extends PreferenceActivity implements ITaskExecutor {
     private void askForConfirm(String msg, final Runnable doStuff) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(msg);
-        builder.setPositiveButton("继续", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.ask_btn1_str, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 doStuff.run();
             }
         });
-        builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.ask_btn2_str, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
             }

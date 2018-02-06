@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "org.foxteam.noisyfox.noexclamation"
-        minSdkVersion 21
+        minSdkVersion 14
         targetSdkVersion 25
     }
 

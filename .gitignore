@@ -3,6 +3,7 @@
 .idea/
 *.iml
 build
+app/build/
 import-summary.txt
 local.properties
 *.apk

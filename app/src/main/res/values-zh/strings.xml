@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">叹号杀手</string>
+    <string name="app_version_name">3.0</string>
+ <string name="set_to_nosiy">即将把服务器地址设置为 noisyfox.io，是否继续？</string>
+<string name="set_back">即将把服务器地址重置为默认值，是否继续？</string>
+<string name="gotting_root">获取root权限</string>
+<string name="no_root">无法获得root权限！程序将可能无法正常使用！</string>
+<string name="ask_btn1_str">继续</string>
+<string name="ask_btn2_str">取消</string>
+<string name="nosiy_task">设置为 nosiyfox.io</string>
+</resources>
