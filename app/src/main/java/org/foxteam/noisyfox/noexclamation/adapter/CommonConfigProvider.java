@@ -81,7 +81,7 @@ public class CommonConfigProvider implements IConfigProvider, ISettingsItem.OnSe
 
     @Override
     public void setToNoisyfox() {
-	mTaskExecutor.runTask("设置为 nosiyfox.io", new ITaskExecutor.TaskRunnable() {
+	mTaskExecutor.runTask("设置为 noisyfox.io", new ITaskExecutor.TaskRunnable() {
             @Override
             public Bundle run() {
                 for (ISettingsItem s : mAllSettings) {

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">No Exclamation</string>
-	<string name="set_to_nosiy">This will set the captive server to nosiyfox.io, are you wanna to continue?</string>
+	<string name="set_to_nosiy">This will set the captive server to noisyfox.io, are you wanna to continue?</string>
 	<string name="set_back">This will set the captive server to default, are you wanna to continue?</string>
 	<string name="gotting_root">Test for root...</string>
 	<string name="no_root">No root! Something will not work!</string>
     <string name="ask_btn1_str">Continue</string>
     <string name="ask_btn2_str">Cancel</string>
-	<string name="nosiy_task">Set to nosiyfox.io</string>
+	<string name="nosiy_task">Set to noisyfox.io</string>
 	
 </resources>
